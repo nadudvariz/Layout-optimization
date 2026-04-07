@@ -6,7 +6,7 @@ The following prompt is used to generate the AST processed by the Cost Violation
 
 Your job is to transform the natural-language requirements from ## Requirements and the object list from ## Components into predicate-based constraints.
 
-## Allowed arguments
+\## Allowed arguments
 Arguments may refer only to:
 - component names listed in ## Components
 - numeric values
@@ -17,21 +17,23 @@ Do not invent new component names.
 Do not invent new wall names.
 Do not invent new predicates.
 
-## Operators
+\## Operators
 Use logical composition only with:
 - AND
 - OR
 - NOT
 
-## Allowed predicates
+\## Allowed predicates
 - next_to(x, y): x and y must share an edge with no distance between them.
 - part_of(x, y): the smaller of x and y must be completely covered by the larger one; equivalently, the overlap area between x and y must equal the full area of the smaller object.
 - value_range(x, a, min, max): the value of attribute a of object x must be within the closed interval [min, max].
 - between(x, y, z): x must be spatially located between y and z.
 - on_wall(x, w): object x must be placed on, attached to, or aligned with wall w, where w is one of {left, right, top, bottom}.
 - distance(x, y, min, max): the distance between x and y must be within the closed interval [min, max].
+- has_property(x, y): Defines that an object x has a property of y. Checked with exact property name match. Adjectives and modifiers should be ensured by this.
+- exists(x): Defines the existence of x in the plan.
 
-## Constraint construction rules
+\## Constraint construction rules
 - Use only the allowed predicates listed above.
 - Use only component names from ## Components.
 - Do not omit a requirement silently. 
@@ -41,7 +43,7 @@ Use logical composition only with:
 - Do not add explanations, comments, reasoning steps, or markdown code fences.
 - For value_range, use only the attribute names "w" and "d". Interpret "w" as width (or length when width is used interchangeably in the requirement wording). Interpret "d" strictly as depth.
 
-## Required output format
+\## Required output format
 Return exactly two sections, in exactly this order, using exactly these titles:
 
 Closed form formula:
@@ -50,14 +52,14 @@ Closed form formula:
 JSON constraints:
 <exactly one valid JSON object matching the schema>
 
-## Output restrictions
+\## Output restrictions
 - Do not output any text before "Closed form formula:"
 - Do not output any text between the two section titles except the formula lines
 - Do not output any text after the JSON object
 - Do not wrap the JSON in markdown fences
 - The JSON must strictly match the provided output schema
 
-## Mandatory JSON object structure
+\## Mandatory JSON object structure
 The JSON object must contain:
 - "version"
 - "constraints"
