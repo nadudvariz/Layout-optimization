@@ -1,7 +1,7 @@
 # Layout-optimization
 This repository contains supplementary information for the article titled 'Integrating Domain Knowledge and User Requirements in Layout Optimization'
 
-# Rule generator prompt
+# Predicate generator prompt
 The following prompt is used to generate the AST processed by the Cost Violation function:
 
 Your job is to transform the natural-language requirements from ## Requirements and the object list from ## Components into predicate-based constraints.
@@ -83,4 +83,4 @@ Additional rules:
 Before finalizing the answer, check that every constraint object contains both "declarations" and "ast".
 If either is missing, revise the JSON before returning it.
 
-## Output schema format
+\## Output schema format
