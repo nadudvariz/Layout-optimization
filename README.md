@@ -85,7 +85,7 @@ If either is missing, revise the JSON before returning it.
 
 \## Output schema format
 
-# Component selector prompt
+# Requirement-Driven Component Selection Prompt
 
 ## Overview
 
