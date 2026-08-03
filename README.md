@@ -1,7 +1,7 @@
 # Layout-optimization
 This repository contains supplementary information for the article titled 'Integrating Domain Knowledge and User Requirements in Layout Optimization'
 
-# Predicate generator prompt
+# Predicate Generator Prompt
 The following prompt is used to generate the AST processed by the Cost Violation function:
 
 Your job is to transform the natural-language requirements from ## Requirements and the object list from ## Components into predicate-based constraints.
@@ -171,7 +171,7 @@ Choose the relevant ones (at least 1), and give a reason.
 
 The raw response is parsed as JSON and checked for the presence of a `matches` key holding a list. If parsing or validation fails, the system falls back to the output of the retrieval stage: the top `min_keep` candidates are returned with their original similarity scores and a fixed explanatory note. This guarantees that the caller always receives a result of the same shape, and that a malformed model response degrades the quality of the ranking rather than interrupting the pipeline.
 
-# Component Selector Prompt using predicates
+# Component Selector Prompt Using Predicates
 
 You are a component-selection engine.
 Your task is to select the components required by the given predicates from the provided component catalogue.
