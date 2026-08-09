@@ -28,9 +28,7 @@ The original JSON files were subsequently converted to Parquet format to ensure 
 
 ### Algorithm Source Code
 
-- Differential Evolution Algorithm
-
-- Genetic Algorithm
-- Differential Evolution Algorithm
-- Bacterial Evolutionary Algorithm
-- Evolution Strategy Algorithm
+- [Genetic Algorithm](algorithms/genetic_algorithm.py)
+- [Differential Evolution Algorithm](algorithms/differential_evolution_algorithm.py)
+- [Bacterial Evolutionary Algorithm](algorithms/bacterial_algorithm_with_partitions.py)
+- [Evolution Strategy Algorithm](algorithms/evolution_strategy_algorithm.py)
