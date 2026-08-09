@@ -25,3 +25,10 @@ The following files were generated during the execution of the Differential Evol
 - without evaluating user requirements. [Results: DE, PS1, HF, without UR](DE_PS1_HF_withoutUR)
 
 The original JSON files were subsequently converted to Parquet format to ensure manageable file sizes. The numerical prefix in the file names represents the initial population ID, while the suffix 'b' indicates that it contains the best solutions.
+
+### Algorithm Source Code
+
+- Genetic Algorithm
+- Differential Evolution Algorithm
+- Bacterial Evolutionary Algorithm
+- Evolution Strategy Algorithm
