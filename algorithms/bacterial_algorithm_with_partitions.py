@@ -49,7 +49,7 @@ class bacterial_algorithm:
         self.structure_graph = build_structure_graph(self.objects)
 
     # ---------------------------------------------------------------------
-    # Helpers for the new schema
+    # Helpers 
     # ---------------------------------------------------------------------
     def _get_wall_flag(self, p: Dict[str, Any]) -> int:
         """Wall flag with create_relation_df overrides (same logic as GA)."""
@@ -136,7 +136,7 @@ class bacterial_algorithm:
             comp["res_y_max"] = res_y_max
 
     # ---------------------------------------------------------------------
-    # Mutation + gene transfer in new schema
+    # Mutation + gene transfer 
     # ---------------------------------------------------------------------
     def _random_deltas_for_individual(
         self, indiv: Individual, step_frac: float
