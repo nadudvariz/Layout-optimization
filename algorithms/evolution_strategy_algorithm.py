@@ -139,7 +139,7 @@ class ES_algorithm:
         return rel_x, rel_y
 
     # ---------------------------------------------------------------------
-    # ES operators (new schema)
+    # ES operators 
     # ---------------------------------------------------------------------
     def _recombine_intermediate(
         self,
@@ -286,10 +286,6 @@ class ES_algorithm:
         # derive overlaps + wall overrides from any representative individual
         overlaps_mandatory, wall = create_relation_df(population[0])
         self._wall_by_name = dict(wall)
-
-        # ensure globals consistent before first evaluation
-        # for ind in population:
-        #     self.recalculate_globals(ind)
 
         # init sigma per individual (per-component)
         init_sigma = float(getattr(model_params, "init_sigma", 0.1) or 0.1)
