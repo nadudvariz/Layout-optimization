@@ -1,5 +1,5 @@
 # Layout-optimization
-This repository contains supplementary information for the article titled 'Integrating Domain Knowledge and User Requirements in Layout Optimization'
+This repository contains supplementary information for the article titled 'Integrating Domain Knowledge and User Requirements in Kitchen Layout Optimization'
 
 # Predicate Generator Prompt
 The following prompt is used to generate the AST processed by the Cost Violation function:
