@@ -18,6 +18,13 @@ Layout design data sources exhibit a fundamental asymmetry: the challenge lies i
 - [System Specification](docs/system-specification.md)
 - [Evolutionary Algorithm Configurations](docs/evolutionary-algorithm-configurations.md)
 
+### Algorithm Source Code
+
+- [Genetic Algorithm](algorithms/genetic_algorithm.py)
+- [Differential Evolution Algorithm](algorithms/differential_evolution_algorithm.py)
+- [Bacterial Evolutionary Algorithm](algorithms/bacterial_algorithm_with_partitions.py)
+- [Evolution Strategy Algorithm](algorithms/evolution_strategy_algorithm.py)
+
 ### Sample Output 
 
 The following files were generated during the execution of the Differential Evolution algorithm using Problemset1 and the heuristic-free case,
@@ -26,9 +33,3 @@ The following files were generated during the execution of the Differential Evol
 
 The original JSON files were subsequently converted to Parquet format to ensure manageable file sizes. The numerical prefix in the file names represents the initial population ID, while the suffix 'b' indicates that it contains the best solutions.
 
-### Algorithm Source Code
-
-- [Genetic Algorithm](algorithms/genetic_algorithm.py)
-- [Differential Evolution Algorithm](algorithms/differential_evolution_algorithm.py)
-- [Bacterial Evolutionary Algorithm](algorithms/bacterial_algorithm_with_partitions.py)
-- [Evolution Strategy Algorithm](algorithms/evolution_strategy_algorithm.py)
