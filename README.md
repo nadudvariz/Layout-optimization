@@ -28,6 +28,8 @@ The original JSON files were subsequently converted to Parquet format to ensure 
 
 ### Algorithm Source Code
 
+- Differential Evolution Algorithm
+
 - Genetic Algorithm
 - Differential Evolution Algorithm
 - Bacterial Evolutionary Algorithm
