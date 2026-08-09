@@ -3,7 +3,7 @@ The aim of the research is to investigate the possibilities of generating fitnes
 
 As part of the task, you are asked to work on 4 different initial situations (problem sets) based on the rules contained in the component_rules and requirements files. The solutions you create will be evaluated using the same scoring procedure that was used to evaluate the solutions produced by the hybrid methods. The goal of the experiment is to compare the results of human activity with machine-generated results in terms of time and level of compliance.
 
-Participation is voluntary and anonymous. Only the following demographic data will be used: gender, education level, age group: 20–40 years, or above 40 years. Completing the task is expected to take approximately 2–3 hours, depending on your familiarity with draw.io.
+Participation is voluntary and anonymous. Only the following demographic data will be used: gender, education level. Completing the task is expected to take approximately 2–3 hours, depending on your familiarity with draw.io.
 
 Requirements: The requirements file contains normalized free-text descriptions.
 These were derived from natural language requirements, design practices, and rules.
@@ -11,7 +11,7 @@ It is important to note that these descriptions may not always be directly appli
 for determining whether a layout is correct. For example, they may include:
 - general principles that are difficult to operationalize, such as: “the kitchen should be bright”,
 - references to furniture or components that do not exist in the given problem set.\
-For this reason, please interpret the requirements reasonably and use your professional judgment, focusing primarily on the rules that are actually applicable to the given layout.
+For this reason, please interpret the requirements reasonably and use your judgment, focusing primarily on the rules that are actually applicable to the given layout.
 
 Component rules: The component_rules file contains structural rules related to furniture items and components. These should be interpreted as follows:
 - Against wall: specifies whether a given piece of furniture must be placed against a wall. Possible values are: yes, forbidden, optional. If placement against a wall is forbidden, there must be sufficient free space between the furniture and the wall to allow movement around it.
