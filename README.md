@@ -24,7 +24,7 @@ Layout design data sources exhibit a fundamental asymmetry: the challenge lies i
 - [Differential Evolution Algorithm](algorithms/differential_evolution_algorithm.py)
 - [Bacterial Evolutionary Algorithm](algorithms/bacterial_algorithm_with_partitions.py)
 - [Evolution Strategy Algorithm](algorithms/evolution_strategy_algorithm.py)
-- [AST and Cost function](algorithms/algorithms_common)
+- [AST and Cost function](algorithms/algorithms_common.py)
 
 ### Sample Output 
 
@@ -34,3 +34,9 @@ The following files were generated during the execution of the Differential Evol
 
 The original JSON files were subsequently converted to Parquet format to ensure manageable file sizes. The numerical prefix in the file names represents the initial population ID, while the suffix 'b' indicates that it contains the best solutions.
 
+## Repository structure
+
+- docs/ – supplementary documentation, including the LLM prompts, instructions for human participants, the system specification, and the evolutionary algorithm configurations.
+- algorithms/ – source code of the evolutionary algorithms and the common functions used for AST-based constraint evaluation and cost calculation.
+- DE_PS1_HF_withUR/ – sample output of the Differential Evolution algorithm for Problem Set 1 in the heuristic-free setting, with user requirements included in the evaluation.
+- DE_PS1_HF_withoutUR/ – corresponding sample output without user requirements included in the evaluation.
